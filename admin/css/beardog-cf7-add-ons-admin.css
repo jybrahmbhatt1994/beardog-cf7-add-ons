@@ -1,0 +1,121 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .main-sec{
+    text-align: center;
+    margin-top: 5%;
+ }
+ .testing-sec{
+    margin-top: 5%;
+ }
+ .custom-btn {
+    width: 150px;
+    height: auto;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: medium;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 3%;
+}
+
+.btn-group a{
+    text-decoration: none;
+}
+
+.btn-16 {
+    border: none;
+    color: #00686b;
+}
+
+.btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn-16:hover {
+    color: #000;
+}
+
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-16:active {top: 2px;}
+
+.super-parent {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: start;
+}
+
+.status-parent {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.super-parent + .super-parent {
+	margin-top: 30px;
+}
+
+.testing-status{
+    margin-bottom:20px;
+}
+
+.notice-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 1em;
+}
+.notice-box.notice-box-success {
+    border: 1px solid #8dbb00;
+    border-left-width: 4px;
+    width: auto;
+}
+
+.notice-box.notice-box-error {
+    border: 1px solid red;
+    border-left-width: 4px;
+}
+
+.invalid-fields-data{border: 1px solid #E4003A; margin-top: 5px; padding: 10px;width: 70%; background: #e4003a08;}
+.invalid-fields-data strong{color: #E4003A;}
+.invalid-fields-data span{color: #402E7A;}
+
+.super-parent iframe{
+    width: 40%;
+    height: 300px;
+}
